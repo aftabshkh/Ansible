@@ -1,21 +1,20 @@
 
   A n s i b l e . . .
 
+# Server:
+# run the following commands on the server for installing Ansible on the Server
+    sudo apt update
+    sudo apt install openssh-server sshpass python python2.7
+    sudo apt install ansible
 
-Server:
-
-  sudo apt update
-  sudo apt install openssh-server sshpass python python2.7
-  sudo apt install ansible
-
-  sudo ansible --version
-
+    sudo ansible --version
 
 
-Client:
 
-  sudo apt update
-  sudo apt install openssh-server sshpass python python2.7
+# Nodes
+# Run the following commands to prepare the nodes to be managed by Ansible
+    sudo apt update
+    sudo apt install openssh-server sshpass python python2.7
 
 
 
