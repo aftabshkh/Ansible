@@ -1,0 +1,14 @@
+
+  A n s i b l e . . .
+
+
+
+Commands:
+  
+  sudo ansible all -m ping -i file_name.txt
+  sudo ansible vm -m shell -a "hostnamectl" -i ~/automation/inv.txt -u aftab --ask-pass
+  sudo ansible vm -m shell -a "date" -i ~/automation/inv.txt -u aftab --ask-pass
+  sudo ansible vm -a "/sbin/shutdown -r now " -i ~/automation/inv.txt --become --ask-sudo-pass
+  sudo ansible vm -m apt -a "name=apache2 state=latest" -i ~/automation/inv.txt --become --ask-sudo-pass
+  sudo ansible vm -m service -a "name=apache2 " -i ~/automation/inv.txt --become --ask-sudo-pass | grep ActiveState
+

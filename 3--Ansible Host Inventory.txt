@@ -1,0 +1,15 @@
+
+  A n s i b l e . . .
+
+
+
+
+>>  cat /etc/ansible/hosts
+# App Servers
+[fe-servers]
+m1 ansible_host=server1.something.com ansible_connection=ssh ansible_python_interpreter=/usr/bin/python3 ansible_user=root ansible_ssh_pass=xxxxxxxxxxx
+m2 ansible_host=server2.something.com ansible_connection=ssh ansible_python_interpreter=/usr/bin/python3 ansible_user=root ansible_ssh_pass=xxxxxxxxxxx
+m3 ansible_host=server3.something.com ansible_connection=ssh ansible_python_interpreter=/usr/bin/python3 ansible_user=root ansible_ssh_pass=xxxxxxxxxxx
+
+
+

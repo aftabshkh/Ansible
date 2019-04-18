@@ -1,0 +1,24 @@
+
+  A n s i b l e . . .
+
+
+
+# SSH Key based authentication
+  ssh-keygen
+  ssh-copy-id ansible@node1
+
+
+
+
+# Create Ansible user an all linux machine to be managed by ansible
+  sudo adduser ansible
+
+
+# Configuring sudo privileges for the 'ansible' user.
+  visudo
+     # find the root section
+     ansible        ALL=(ALL)      NOPASSWD:ALL
+
+
+
+
