@@ -1,23 +1,22 @@
 
   A n s i b l e . . .
 
+# Pre-requisites for setting Ansible
+# SSH should be installed on all the nodes
 
+# For best practice, generate SSH Key for key based authentication on Ansible server
+    ssh-keygen
 
-# SSH Key based authentication
-  ssh-keygen
-  ssh-copy-id ansible@node1
+# Copy the SSH keys from Ansible server to the nodes
+    ssh-copy-id ansible@node1
 
+# Create "ansible" user on all linux machine to be managed by Ansible server
+    sudo adduser ansible
 
-
-
-# Create Ansible user an all linux machine to be managed by ansible
-  sudo adduser ansible
-
-
-# Configuring sudo privileges for the 'ansible' user.
-  visudo
-     # find the root section
-     ansible        ALL=(ALL)      NOPASSWD:ALL
+# Configuring sudo privileges for the "ansible" user.
+# run the command "visudo" to provide sudo privileges to "ansible" user created in the above step
+# find the root section and add the following line 
+    ansible        ALL=(ALL)      NOPASSWD:ALL
 
 
 
