@@ -12,3 +12,7 @@ Commands:
   sudo ansible vm -m apt -a "name=apache2 state=latest" -i ~/automation/inv.txt --become --ask-sudo-pass
   sudo ansible vm -m service -a "name=apache2 " -i ~/automation/inv.txt --become --ask-sudo-pass | grep ActiveState
 
+CISCO
+
+  ansible r1 -m raw -a "show ip interface brief" -i inv1.txt
+  ansible r1 -m raw -a "show ip ospf neigh" -i inv1.txt
